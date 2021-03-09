@@ -20,6 +20,14 @@
     </insert>
 
 
+    <select id="selectById" parameterType="java.lang.Long" resultMap="resultCourse">
+        select
+            cid,cname,user_id,cstatus
+        from
+            course
+        where
+            cid=#{cid}
+    </select>
 
 </mapper>
 

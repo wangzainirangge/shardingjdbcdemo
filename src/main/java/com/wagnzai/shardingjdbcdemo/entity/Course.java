@@ -38,4 +38,14 @@ public class Course {
     public void setCstatus(String cstatus) {
         this.cstatus = cstatus;
     }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "cid=" + cid +
+                ", cname='" + cname + '\'' +
+                ", userId=" + userId +
+                ", cstatus='" + cstatus + '\'' +
+                '}';
+    }
 }

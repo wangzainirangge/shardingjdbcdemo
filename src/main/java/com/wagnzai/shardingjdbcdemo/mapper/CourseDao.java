@@ -9,5 +9,6 @@ public interface CourseDao {
 
     public boolean addCourse(@Param("course") Course course);
 
+    public Course selectById(@Param("cid") Long cid);
 
 }
