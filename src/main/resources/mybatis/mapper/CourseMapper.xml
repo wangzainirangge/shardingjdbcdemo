@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wagnzai.shardingjdbcdemo.mapper.CourseDao">
+
+    <resultMap id="resultCourse" type="com.wagnzai.shardingjdbcdemo.entity.Course">
+        <id column="cid" property="cid"></id>
+        <result column="cname" property="cname"></result>
+        <result column="user_id" property="userId"></result>
+        <result column="cstatus" property="cstatus"></result>
+    </resultMap>
+
+
+    <insert id="addCourse" parameterType="com.wagnzai.shardingjdbcdemo.entity.Course">
+        insert into
+            course (cid,cname,user_id,cstatus)
+        values
+            (#{course.cid},#{course.cname},#{course.userId},#{course.cstatus})
+    </insert>
+
+
+
+</mapper>
+
