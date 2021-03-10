@@ -18,4 +18,9 @@ public class CourseServiceImpl implements CourseService {
         courseDao.addCourse(course);
     }
 
+    @Override
+    public Course selectById(Long cid) {
+        return courseDao.selectById(cid);
+    }
+
 }

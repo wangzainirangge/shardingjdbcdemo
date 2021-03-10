@@ -6,4 +6,6 @@ public interface CourseService {
 
     public void addCourse(Course course);
 
+    public Course selectById(Long cid);
+
 }

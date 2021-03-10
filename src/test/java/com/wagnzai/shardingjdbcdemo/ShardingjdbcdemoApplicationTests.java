@@ -24,13 +24,13 @@ class ShardingjdbcdemoApplicationTests {
         course.setCname("java");
         course.setUserId(1L);
         course.setCstatus("Normal");
-        courseDao.addCourse(course);
+        courseService.addCourse(course);
 
     }
 
     @Test
     void selectById() {
-        Course course = courseDao.selectById(446L);
+        Course course = courseService.selectById(446L);
         System.out.println(course.toString());
     }
 
